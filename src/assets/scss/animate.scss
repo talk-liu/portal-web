@@ -1,0 +1,16 @@
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 6%, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.slideInUp {
+  animation: slideInUp 2s cubic-bezier(.15,.54,.6,.98);
+}

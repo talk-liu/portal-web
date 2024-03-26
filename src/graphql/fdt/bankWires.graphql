@@ -1,0 +1,5 @@
+query postBankWires($bank_card_id:Int,$source_of_funds:Int,$amount:Float) {
+  bankWires(bank_card_id:$bank_card_id,source_of_funds:$source_of_funds,amount:$amount) {
+    result
+  }
+}

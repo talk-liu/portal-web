@@ -1,0 +1,19 @@
+mutation verify(
+  $auth_action: String
+  $type: String
+  $email: String
+  $country: String
+  $phone_number: String
+  $password: String
+) {
+  verify(
+    auth_action: $auth_action
+    type: $type
+    email: $email
+    country: $country
+    phone_number: $phone_number
+    password: $password
+  ) {
+    result
+  }
+}

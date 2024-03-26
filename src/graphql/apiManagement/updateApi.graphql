@@ -1,0 +1,5 @@
+mutation updateApiToken($id: Int, $ip_whitelist: String, $otp: String, $type: String) {
+  updateApiToken(id: $id, ip_whitelist: $ip_whitelist, type: $type, otp: $otp) {
+    result
+  }
+}

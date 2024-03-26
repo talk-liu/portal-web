@@ -1,0 +1,6 @@
+query getVoteHistoryData {
+  voteCoinHistory {
+    voteHistoryInfo
+    voteRewardHistory
+  }
+}

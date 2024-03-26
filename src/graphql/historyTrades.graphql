@@ -1,0 +1,24 @@
+query getHistoryTrades(
+  $order_id: String
+  $from: String
+  $to: String
+  $market: String
+  $bu: String
+  $qu: String
+  $page: Int
+  $page_size: Int
+) {
+  historyTrade(
+    order_id: $order_id
+    from: $from
+    to: $to
+    market: $market
+    bu: $bu
+    qu: $qu
+    page: $page
+    page_size: $page_size
+  ) {
+    trades
+    meta
+  }
+}

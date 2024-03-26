@@ -1,0 +1,15 @@
+query getOptionTransfersHistory($direction: String, $page: Int!, $page_size: Int) {
+  optionTransfersHistory(direction: $direction, page: $page, page_size: $page_size) { 
+    transfers{
+      id
+      created_at
+      amount
+      code
+      to_account
+      from_account
+      mark
+      state
+    }
+    meta
+  }
+}

@@ -1,0 +1,5 @@
+mutation twoFactor($type: String!,$refresh: Boolean!) {
+  twoFactor(type:$type,refresh:$refresh) {
+    result
+  }
+}

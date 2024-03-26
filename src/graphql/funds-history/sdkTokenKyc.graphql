@@ -1,0 +1,5 @@
+query postSdkTokenKyc {
+  sdkTokenKyc {
+    token
+  }
+}

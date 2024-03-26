@@ -1,0 +1,5 @@
+mutation documentSms($phone:String!, $country_code:String!) {
+  documentSms(country_code: $country_code, phone: $phone) {
+    result
+  }
+}

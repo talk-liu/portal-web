@@ -1,0 +1,23 @@
+query getIeoInfo(
+  $ieoCode: String
+) {
+  ieoInfo(
+     ieoCode: $ieoCode
+  ) {
+    ieoRspVo{
+      ieoCode
+      startDate
+      endDate
+      amount
+      saleNum
+      manNum
+    }
+    ieoRateList {
+      ieoCode
+      currencyCode
+      currency
+      rate
+    }
+    currentRate
+  }
+}

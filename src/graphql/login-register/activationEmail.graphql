@@ -1,0 +1,5 @@
+mutation activationEmail($email: String) {
+  activationEmail(email: $email) {
+    result
+  }
+}

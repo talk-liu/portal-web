@@ -1,0 +1,5 @@
+mutation deleteFavoriteMarket($market: String!) {
+  deleteFavoriteMarket(market: $market) {
+    market
+  }
+}

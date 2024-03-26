@@ -1,0 +1,25 @@
+mutation signup(
+  $email: String
+  $password: String
+  $password_confirmation: String
+  $utm_source: String
+  $utm_medium: String
+  $aff: String
+  $id_type: String
+  $id_value: String
+  $token: String
+) {
+  signup(
+    email: $email
+    password: $password
+    password_confirmation: $password_confirmation
+    utm_source: $utm_source
+    utm_medium: $utm_medium
+    aff: $aff
+    id_type: $id_type
+    id_value: $id_value
+    token: $token
+  ) {
+    result
+  }
+}

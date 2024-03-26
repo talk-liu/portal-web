@@ -1,0 +1,13 @@
+query getIncome {
+  income {
+    at_ratio
+    finished_cache
+    frozen_at
+    last_at_income
+    seven_days_at
+    total_at
+    total_profit
+    yesterday_profit,
+    distributed
+  }
+}

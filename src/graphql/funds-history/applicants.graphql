@@ -1,0 +1,5 @@
+query postApplicants($birth_date:String,$first_name:String,$last_name:String,$country:String,$city:String,$zipcode:String,$address:String) {
+  applicants(birth_date: $birth_date,first_name: $first_name,last_name: $last_name,country: $country,city: $city,zipcode: $zipcode,address: $address) {
+    applicant_id
+  }
+}

@@ -1,0 +1,5 @@
+query postBankCards($fdt_bank_id:Int,$account_number:String,$fdt_country_id:Int,$city:String,$state_province:String,$postal_code:String,$address1:String,$address2:String,$relationship:String) {
+  bankCards(fdt_bank_id: $fdt_bank_id,account_number:$account_number,fdt_country_id:$fdt_country_id,city:$city,state_province:$state_province,postal_code:$postal_code,address1:$address1,address2:$address2,relationship:$relationship) {
+    result
+  }
+}

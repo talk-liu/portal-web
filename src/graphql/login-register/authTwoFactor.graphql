@@ -1,0 +1,5 @@
+mutation authTwoFactor($email: String, $otp: String, $type: String) {
+  authTwoFactor(email: $email, otp: $otp, type: $type) {
+    result
+  }
+}

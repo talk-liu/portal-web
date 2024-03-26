@@ -1,0 +1,5 @@
+query getFavoriteMarket {
+  favoriteMarket {
+    fm
+  }
+}

@@ -1,0 +1,5 @@
+mutation forgetPsw($code: String, $type: String, $email: String, $refresh: Boolean) {
+  forgetPsw(code: $code, type: $type, email: $email, refresh: $refresh) {
+    result
+  }
+}

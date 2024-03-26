@@ -1,0 +1,116 @@
+//=== Colors
+// 主色系
+$color-primary: #07e9b2;
+
+// Color
+$color-0: #000;
+$color-1: #111;
+$color-3: #333;
+$color-6: #666;
+$color-7: #777;
+$color-9: #999;
+$color-255: #fff;
+$color-gray: #97a5b3;
+$color-font-text-gray: #97a5b3;
+
+// Color opacity
+$color-255-dark: rgba(255, 255, 255, 0.9);
+$color-255-normal: rgba(255, 255, 255, 0.6);
+$color-255-light: rgba(255, 255, 255, 0.3);
+
+// 辅助色
+$color-assist1: #666666;
+$color-assist2: #999999;
+$color-assist3: #97a5b3;
+$color-assist4: #f8f8fb;
+$color-assist5: #3bb46e;
+$color-assist6: #ee4343;
+$color-assist7: #777777;
+$color-assist8: #ccc;
+$color-assist9: #aaaaaa;
+$color-assist10: #e06f0d;
+$color-assist11: #888;
+$color-error: hsl(0, 83%, 60%);
+$color-border-hover: #8394a5;
+$color-text-extra: #88a0b8;
+$color-text: #333333;
+
+// 分割线
+$color-line: #EAEDF5;
+$border-line: #979797;
+
+// Color Content Background
+$color-FA: #fafafa;
+// Size
+$font-size-base: 14px;
+// Border-Radius
+$border-radius-base: 4px;
+
+// Boder-Color
+$color-d: #ddd;
+
+// Error
+$color-error: #ee4343;
+// Warning
+$color-warn: #ff7b00;
+// Success
+$color-success: #3bb46e;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+// $screen-xs: 480px !default;
+// //** Deprecated `$screen-xs-min` as of v3.2.0
+// $screen-xs-min: $screen-xs !default;
+// //** Deprecated `$screen-phone` as of v3.0.1
+// $screen-phone: $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 768px !default;
+$screen-sm-min: ($screen-sm + 1) !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet: $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md: 1024px !default;
+$screen-md-min: ($screen-md + 1) !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop: $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 1440px !default;
+$screen-lg-min: ($screen-lg + 1) !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop: $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: $screen-sm-min !default;
+$screen-sm-max: $screen-md-min !default;
+$screen-md-max: $screen-lg-min !default;
+
+$buy-color: #3bb46e;
+$sell-color: #ee4343;
+
+// 屏幕尺寸自适应边界
+$screen-h5-new: 768px !default;
+$screen-md-new: 1280px !default;
+$screen-lg-new: 1400px !default;
+
+// zindex 层级列表
+$zindex-newspace: 1 !default;
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-mask: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+$font-family-base: 'quote', 'themeFont', 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Helvetica Neue', Helvetica,
+  'Hiragino Sans GB', Arial, sans-serif;

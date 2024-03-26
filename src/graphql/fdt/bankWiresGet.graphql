@@ -1,0 +1,5 @@
+query getBankWiresGet($id:Int) {
+  bankWiresGet(id:$id) {
+    result
+  }
+}

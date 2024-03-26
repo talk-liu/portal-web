@@ -1,0 +1,5 @@
+query getPaymentOrder($page: Int, $page_size: Int, $state: String) {
+  paymentOrderList(page: $page, page_size: $page_size, state: $state) {
+    result
+  }
+} 

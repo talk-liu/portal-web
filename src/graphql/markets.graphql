@@ -1,0 +1,11 @@
+query getMarkets {
+  market {
+    list {
+      id
+      name
+      depth_merge
+      market_partition
+      fee
+    }
+  }
+}

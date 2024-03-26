@@ -1,0 +1,18 @@
+query getGameRewardHistory(
+  $page: Int
+  $num: Int
+) {
+  atGameRewardHis(page: $page, num: $num) {
+  count
+  groupName
+  content {
+    id
+    memberId
+    groupName
+    rewardType
+    vipGrade
+    rewardAmount
+    groupNameCn
+    }
+  }
+}

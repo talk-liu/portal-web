@@ -1,0 +1,8 @@
+query getOptionAccounts {
+  optionAccount {
+    option_currency
+    amount
+    balance
+    locked
+  }
+}

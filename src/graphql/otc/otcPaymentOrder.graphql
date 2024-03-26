@@ -1,0 +1,5 @@
+query getPaymentOrder($payment_id: String) {
+  paymentOrder(payment_id: $payment_id) {
+    result
+  }
+}

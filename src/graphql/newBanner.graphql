@@ -1,0 +1,6 @@
+query getNewBanner {
+  newBanner {
+    banner
+    announce
+  }
+}

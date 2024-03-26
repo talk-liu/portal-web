@@ -1,0 +1,5 @@
+mutation activate($code: String) {
+  activate(code: $code) {
+    result
+  }
+}

@@ -1,0 +1,6 @@
+query getIcoAndOp {
+  icoAndOp {
+    ico
+    operationActivity
+  }
+}

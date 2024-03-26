@@ -1,0 +1,5 @@
+mutation withdrawCreate($currency:String,$fund_uid:String,$sum:Float,$memo:String,$otp:String,$type:String) {
+  withdrawCreate(type: $type, otp: $otp, currency: $currency, fund_uid: $fund_uid, sum: $sum, memo: $memo) {
+    result
+  }
+}

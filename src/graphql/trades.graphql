@@ -1,0 +1,5 @@
+query getTrades($market: String!, $limit: Int) {
+  trade(market: $market, limit: $limit) {
+    record
+  }
+}

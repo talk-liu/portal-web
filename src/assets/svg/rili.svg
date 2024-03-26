@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.706 15.7247 0.706 15.7247 14.9995 0 14.9995"></polygon>
+        <polygon id="path-3" points="0 15.2943 15.725 15.2943 15.725 1.0003 0 1.0003"></polygon>
+    </defs>
+    <g id="交易大厅" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="历史委托-copy-2" transform="translate(-436.000000, -177.000000)">
+            <g id="Page-1" transform="translate(436.000000, 176.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.294300)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M14.7247,12.9995 C14.7247,13.5515 14.2767,13.9995 13.7247,13.9995 L1.9997,13.9995 C1.4487,13.9995 0.9997,13.5515 0.9997,12.9995 L0.9997,4.6065 L14.7247,4.6065 L14.7247,12.9995 Z M13.7247,0.7055 L1.9997,0.7055 C0.8957,0.7055 -0.0003,1.6015 -0.0003,2.7055 L-0.0003,12.9995 C-0.0003,14.1045 0.8957,14.9995 1.9997,14.9995 L13.7247,14.9995 C14.8297,14.9995 15.7247,14.1045 15.7247,12.9995 L15.7247,2.7055 C15.7247,1.6015 14.8297,0.7055 13.7247,0.7055 Z" id="Fill-1" fill="#97A5B3" mask="url(#mask-2)"></path>
+                </g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <polygon id="Fill-4" fill="#97A5B3" mask="url(#mask-4)" points="2.786 8.7803 5.474 8.7803 5.474 6.9713 2.786 6.9713"></polygon>
+                <polygon id="Fill-6" fill="#97A5B3" mask="url(#mask-4)" points="6.464 8.7803 9.152 8.7803 9.152 6.9713 6.464 6.9713"></polygon>
+                <polygon id="Fill-7" fill="#97A5B3" mask="url(#mask-4)" points="10.214 8.7803 12.902 8.7803 12.902 6.9713 10.214 6.9713"></polygon>
+                <polygon id="Fill-8" fill="#97A5B3" mask="url(#mask-4)" points="2.75 11.9563 5.438 11.9563 5.438 10.1473 2.75 10.1473"></polygon>
+                <polygon id="Fill-9" fill="#97A5B3" mask="url(#mask-4)" points="6.429 11.9563 9.117 11.9563 9.117 10.1473 6.429 10.1473"></polygon>
+                <polygon id="Fill-10" fill="#97A5B3" mask="url(#mask-4)" points="10.179 11.9563 12.867 11.9563 12.867 10.1473 10.179 10.1473"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

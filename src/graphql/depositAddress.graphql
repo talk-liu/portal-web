@@ -1,0 +1,5 @@
+query getDepositAddressData($currency: String) {
+  depositAddress(currency: $currency) {
+    result
+  }
+}

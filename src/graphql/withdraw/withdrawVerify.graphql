@@ -1,0 +1,5 @@
+mutation withdrawVerify($code:String!, $id:Int!) {
+  withdrawVerify(id: $id, code: $code) {
+    result
+  }
+}

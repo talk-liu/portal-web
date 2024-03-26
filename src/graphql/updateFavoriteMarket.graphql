@@ -1,0 +1,5 @@
+mutation updateFavoriteMarket($market: String!) {
+  updateFavoriteMarket(market: $market) {
+    market
+  }
+}

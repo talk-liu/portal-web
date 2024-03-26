@@ -1,0 +1,140 @@
+{
+  "name": "portal-web",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "author": "FE Team",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --progress --config build/webpack.config.dev.js",
+    "build": "webpack --config build/webpack.config.prod.js",
+    "lint": "eslint --fix --ext .js,.vue .",
+    "lintcss": "stylelint src/**/**/*.vue --custom-syntax postcss-html --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.2.6",
+    "apollo-client": "^2.3.7",
+    "apollo-link": "^1.2.2",
+    "apollo-link-context": "^1.0.8",
+    "apollo-link-http": "^1.5.4",
+    "axios": "^0.18.0",
+    "bignumber.js": "^7.2.1",
+    "chartist": "^0.11.0",
+    "countup.js": "^1.9.3",
+    "d3-scale": "^2.1.2",
+    "d3-shape": "^1.2.2",
+    "dayjs": "^1.7.7",
+    "echarts": "^4.1.0",
+    "element-ui": "^2.4.11",
+    "events": "^3.0.0",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
+    "i18n-iso-countries": "^6.8.0",
+    "js-sha1": "^0.6.0",
+    "jstz": "^2.1.1",
+    "nprogress": "^0.2.0",
+    "onfido-sdk-ui": "^5.2.1",
+    "pusher-js": "^4.2.2",
+    "qrcodejs2": "0.0.2",
+    "qs": "^6.5.2",
+    "resize-detector": "^0.1.9",
+    "resize-observer-polyfill": "^1.5.0",
+    "v-click-outside": "^1.0.5",
+    "vue": "^2.5.17",
+    "vue-apollo": "^3.0.0-beta.19",
+    "vue-clipboard2": "^0.2.1",
+    "vue-i18n": "^8.9.0",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-router": "^3.0.1",
+    "vue-seamless-scroll": "^1.1.23",
+    "vuejs-logger": "^1.5.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.23",
+    "autoprefixer": "^9.1.2",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.3.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-jest": "^21.21.0",
+    "eslint-plugin-vue": "4.7.1",
+    "file-loader": "^1.1.11",
+    "git-revision-webpack-plugin": "^3.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.4.2",
+    "jest-serializer-vue": "^2.0.2",
+    "lint-staged": "^7.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "postcss": "^7.0.2",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-html": "^0.32.0",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^2.1.6",
+    "postcss-syntax": "^0.32.0",
+    "postcss-url": "^8.0.0",
+    "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^1.3.3",
+    "style-loader": "^0.21.0",
+    "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0",
+    "url-loader": "^1.0.1",
+    "vue-eslint-parser": "^3.2.2",
+    "vue-jest": "^2.6.0",
+    "vue-loader": "^15.2.6",
+    "vue-style-loader": "^4.1.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.4",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "node build/check-dev-env.js",
+      "npm run lint",
+      "npm run lintcss",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "last 4 version",
+    "Safari 10"
+  ],
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,vue}"
+    ],
+    "coverageDirectory": ".jest_coverage",
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ]
+  }
+}

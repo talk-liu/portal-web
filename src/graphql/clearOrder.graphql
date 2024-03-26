@@ -1,0 +1,5 @@
+mutation clearOrder($side: String) {
+  clearOrder(side: $side) {
+    id
+  }
+}

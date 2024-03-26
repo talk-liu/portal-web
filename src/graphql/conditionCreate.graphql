@@ -1,0 +1,23 @@
+mutation conditionCreate(
+  $direction: String!
+  $trigger_price: String!
+  $volume: String!
+  $condition_type: Int!
+  $side: String!
+  $market: String!
+  $price: String!
+  $ord_type: String!
+) {
+  conditionCreate(
+    direction: $direction
+    trigger_price: $trigger_price
+    volume: $volume
+    condition_type: $condition_type
+    side: $side
+    market: $market
+    price: $price
+    ord_type: $ord_type
+  ) {
+    result
+  }
+}

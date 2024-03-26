@@ -1,0 +1,19 @@
+query getSingleKLine(
+  $market: String!
+  $limit: Int
+  $period: Int!
+  $timestamp: Int
+  $to: Int
+  $_t: Date
+) {
+  singleKLine(
+    market: $market
+    limit: $limit
+    period: $period
+    timestamp: $timestamp
+    to: $to
+    _t: $_t
+  ) {
+    k
+  }
+}

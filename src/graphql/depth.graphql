@@ -1,0 +1,7 @@
+query getDepth($market: String) {
+  depth(market: $market) {
+    timestamp
+    asks
+    bids
+  }
+}

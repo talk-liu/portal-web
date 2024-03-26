@@ -1,0 +1,5 @@
+mutation signin($email: String, $password: String, $id_type: String, $id_value: String, $token: String) {
+  signin(email: $email, password: $password, id_type: $id_type, id_value: $id_value, token: $token) {
+    result
+  }
+}

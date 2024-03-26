@@ -1,0 +1,5 @@
+mutation conditionCancel($id: Int) {
+  conditionCancel(id: $id) {
+    result
+  }
+}

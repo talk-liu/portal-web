@@ -1,0 +1,5 @@
+mutation confirmFactor($otp: String, $type: String, $auth_action: String, $password: String) {
+  confirmFactor(otp: $otp, type: $type, auth_action: $auth_action, password: $password) {
+    result
+  }
+}

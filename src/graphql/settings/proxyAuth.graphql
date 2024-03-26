@@ -1,0 +1,6 @@
+mutation proxyAuth($forwardName:String){
+  proxyAuth(forwardName:$forwardName){
+    result
+  }
+}
+

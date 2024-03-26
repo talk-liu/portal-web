@@ -1,0 +1,5 @@
+mutation addWithdrawAddress($uid:String!,$extra:String!,$currency:String!) {
+  createAddress(uid: $uid, extra:$extra,currency:$currency) {
+    result
+  }
+}

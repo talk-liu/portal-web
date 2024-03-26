@@ -1,0 +1,82 @@
+// Responsive utilities
+
+//
+// More easily include all the states for responsive-utilities.less.
+// [converter] $parent hack
+@mixin responsive-visibility($parent) {
+  #{$parent} {
+    display: block !important;
+  }
+  table#{$parent} {
+    display: table !important;
+  }
+  tr#{$parent} {
+    display: table-row !important;
+  }
+  th#{$parent},
+  td#{$parent} {
+    display: table-cell !important;
+  }
+}
+
+// [converter] $parent hack
+@mixin responsive-invisibility($parent) {
+  #{$parent} {
+    display: none !important;
+  }
+}
+
+@mixin screen-xs() {
+  @media (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+@mixin screen-sm() {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+@mixin screen-md() {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @content;
+  }
+}
+
+@mixin screen-lg() {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}
+
+
+// h5到大屏之前公用样式
+@mixin screen-sm-md-new() {
+  @media (min-width: $screen-h5-new + 1) and (max-width: $screen-lg-new) {
+    @content;
+  }
+}
+
+// h5专用样式
+@mixin screen-h5-new() {
+  @media (max-width: $screen-h5-new) {
+    @content;
+  }
+}
+// 小屏幕专用样式
+@mixin screen-sm-new() {
+  @media (min-width: $screen-h5-new + 1) and (max-width: $screen-md-new) {
+    @content;
+  }
+}
+// 中屏幕专用样式
+@mixin screen-md-new() {
+  @media (min-width: $screen-md-new + 1) and (max-width: $screen-lg-new) {
+    @content;
+  }
+}
+
+@function pxtovw($px){
+  @return $px * 100 / 375px * 1vw;
+}

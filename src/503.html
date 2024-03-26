@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>系统公告 - Riostox</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body,
+    html {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #f6f6f6;
+    }
+
+    .page_wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 100px 0 120px;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .icon {
+      width: 534px;
+      height: 293px;
+    }
+
+    #title {
+      margin: 80px 0 30px;
+      font-size: 32px;
+      color: #666666;
+    }
+
+    #text {
+      padding: 0 170px;
+      margin-bottom: 70px;
+      font-size: 18px;
+      color: #999999;
+      line-height: 1;
+      text-align: left;
+    }
+
+    #btn {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 0 40px;
+      height: 55px;
+      line-height: 55px;
+      border: 1px solid #979797;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #999999;
+      font-size: 18px;
+    }
+
+    #btn:hover {
+      color: #333333;
+    }
+
+    @media only screen and (max-width: 750px) {
+
+      body,
+      html {
+        background-color: #fff;
+      }
+
+      .page_wrap {
+        padding: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(0, 0);
+      }
+
+      .icon {
+        margin-top: 50px;
+        width: 226px;
+        height: 165px;
+      }
+
+      #title {
+        font-size: 24px;
+      }
+
+      #text {
+        padding: 0 40px;
+        font-size: 14px;
+        text-align: left;
+      }
+
+      #btn {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page_wrap">
+  <img src="https://i.riostox.com/i/69/69e45c23b850ccca9017e56ce5d5fde9.png" class="icon" />
+  <div id="title"></div>
+  <div id="text" >
+    <div style="float: left;">
+      <p>Dear users, </p>
+      <br/>
+      <p>Riostox is investigating what seems like a distributed denial-of-service (DDoS) attack. The DDoS attack started during earlier maintenance and has been ongoing since.</p>
+      <br/>
+      <p>We have temporarily terminated our web service while Riostox App (iOS and Android) functions as usual. Please be advised to use Riostox App for trading, deposit and withdrawal for the time being.</p>
+      <br/>
+      <p>As our security protocols are fully aligned and compliant with industry best practices, all assets are safely . </p>
+      <br/>
+      <p>Please stay tuned for further updates.</p>
+      <br/>
+      <p>We seek your understanding.</p>
+      <br/>
+      <p>Riostox Team</p>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  function language() {
+    var currentLang = navigator.language; //判断除IE外其他浏览器使用语言
+    if (!currentLang) {
+      currentLang = navigator.browserLanguage;
+    }
+    return currentLang;
+  }
+
+  (function () {
+    var lang = language();
+    // if (lang === "zh-CN" || lang === "zh") {
+    //   document.getElementById("title").innerText = "系统公告";
+    //   document.getElementById("text").innerText =
+    //     "Riostox 2020年03月16日 00:30（UTC+8）- 2020年03月16日 09:00（UTC+8）进行系统升级，期间暂停访问、登录、充值、提现和交易，为您带来不便，深表歉意。";
+    // } else {
+      document.title = "Announcement - Riostox";
+      document.getElementById("title").innerText = "Announcement";
+      // document.getElementById("text").innerText =
+      //   "We are now upgrading system from 00:30 to 09:00 16 Mar (UTC+8). The website is off from visit, deposit, withdrawal or trade during this period. We sincerely apologize for the inconvenience!";
+    // }
+  })();
+</script>
+
+</html>

@@ -1,0 +1,5 @@
+query getKline($markets: String!, $limit: Int, $period: Int) {
+  kline(markets: $markets, limit: $limit, period: $period) {
+    result
+  }
+}

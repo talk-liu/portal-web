@@ -1,0 +1,6 @@
+query getAccountTransferHistory($page:Int,$page_size:Int) {
+  accountTransferHistory(page: $page, page_size: $page_size)  {
+    deposits,
+    meta
+  }
+}

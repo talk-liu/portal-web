@@ -1,0 +1,5 @@
+mutation postApiToken($label: String!, $type: String!, $otp: String!) {
+  postApiToken(label: $label, otp: $otp, type: $type) {
+    result
+  }
+}

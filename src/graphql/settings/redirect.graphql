@@ -1,0 +1,5 @@
+mutation redirect($session_id: String, $path: String) {
+  redirect(session_id: $session_id, path: $path) {
+    result
+  }
+}

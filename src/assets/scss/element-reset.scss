@@ -1,0 +1,154 @@
+.el-date-editor {
+  width: 117px !important;
+}
+.el-range-editor {
+  width: 100% !important;
+  height: 40px !important;
+}
+.el-date-editor .el-input__inner,
+.el-range-editor .el-input__inner {
+  width: 117px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  border: 1px solid #dce0eb !important;
+  padding-left: 10px !important;
+  font-family: semiBold, 'PingFang SC', 'Microsoft YaHei', '微软雅黑';
+  color: $color-9 !important;
+  font-size: 12px !important;
+  &::-webkit-input-placeholder {
+    color: #999;
+  }
+}
+
+.el-date-editor .el-input__prefix {
+  left: 92px !important;
+}
+.el-range-editor .el-custom-icon {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.el-date-picker__time-header {
+  display: none !important;
+}
+.el-picker-panel__footer {
+  margin: 0 15px !important;
+  padding: 10px 0 !important;
+}
+.el-picker-panel__footer button {
+  border-radius: 4px !important;
+  font-size: 12px !important;
+  padding: 5px !important;
+  border: 1px solid #dcdfe6 !important;
+  color: #606266 !important;
+  cursor: pointer;
+  background: #fff;
+}
+.el-picker-panel__footer .el-button--text:hover,
+.el-button.is-plain:hover {
+  background-color: transparent;
+  color: #97a5b3;
+  border-color: #bdc7d1;
+}
+.el-picker-panel__footer button:last-child {
+  margin-left: 10px !important;
+}
+.el-date-table td.current {
+  background: $color-primary !important;
+  border-radius: 4px !important;
+  width: 34px !important;
+  height: 34px !important;
+  line-height: 34px !important;
+}
+.el-date-table td.current:not(.disabled) span {
+  background: $color-primary !important;
+  color: #606266 !important;
+}
+
+.el-date-table td.today span {
+  color: $color-primary !important;
+}
+.el-date-table td.available:hover {
+  color: $color-primary !important;
+}
+.el-date-table td.end-date span,
+.el-date-table td.start-date span {
+  background: $color-primary !important;
+  color: #fff !important;
+}
+.el-custom-icon::before {
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-top: 8px;
+  background: url('~@/assets/svg/rili.svg') no-repeat;
+  content: '';
+}
+
+.el-table__expand-column .el-icon-arrow-right:before {
+  content: '';
+}
+
+.el-table__expand-icon--expanded {
+  -webkit-transform: rotate(0) !important;
+  transform: rotate(0) !important;
+}
+
+.el-table__expanded-cell[class*='cell'] {
+  padding: 20px 23px 17px 23px !important;
+}
+.el-table--enable-row-hover .el-table__body .expanded + tr:hover > td {
+  background: #fff6cd !important;
+}
+.el-table--enable-row-hover .el-table__body .el-table__expanded-cell tr:hover > td {
+  background: #fff6cd !important;
+}
+.el-table--enable-row-hover .el-table__body .el-table__expanded-cell tr:hover > td {
+  background: #f9f0c6 !important;
+}
+.el-table__expanded-cell,
+.el-table__expanded-cell th,
+.el-table__expanded-cell .el-table__empty-block {
+  background: #fff6cd !important;
+}
+.el-table__expanded-cell tr {
+  background: #fff6cd !important;
+}
+.el-table__expanded-cell .el-table::before {
+  background: none !important;
+}
+.el-table__expanded-cell .el-table {
+  font-size: 12px !important;
+}
+.el-table__expanded-cell th.is-leaf,
+.yellow-bottom td {
+  border-bottom: 1px solid #f5e7a8 !important;
+}
+.el-table__expanded-cell th:nth-child(5),
+.el-table__expanded-cell td:nth-child(5) {
+  text-align: right !important;
+}
+.el-table__expanded-cell .cell {
+  padding-left: 0 !important;
+}
+
+.funds-body_table .row-data {
+  background: #fcfcff !important;
+}
+.el-table--enable-row-hover.funds-body_table .el-table__body tr:hover > td {
+  background: #f4f4f4 !important;
+}
+.funds-body_table .row-class {
+  background: #fff !important;
+}
+.el-table__empty-block {
+  font-size: 12px;
+}
+.el-table,
+.el-table__body-wrapper {
+    overflow: visible!important;
+
+    table {
+        overflow: visible!important;
+    }
+}

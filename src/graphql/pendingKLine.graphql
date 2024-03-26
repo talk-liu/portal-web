@@ -1,0 +1,18 @@
+query getPendingKLine(
+  $market: String!
+  $limit: Int
+  $period: Int!
+  $_t: Date
+  $trade_id: Int
+) {
+  pendingKLine(
+    market: $market
+    limit: $limit
+    period: $period
+    _t: $_t
+    trade_id: $trade_id
+  ) {
+    k,
+    trades
+  }
+}

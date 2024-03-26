@@ -1,0 +1,5 @@
+mutation deleteApiToken($id: Int!) {
+  deleteApiToken(id: $id) {
+    result
+  }
+}

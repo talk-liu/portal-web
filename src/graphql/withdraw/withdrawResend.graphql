@@ -1,0 +1,5 @@
+mutation withdrawResend($id: Int!) {
+  withdrawResend(id: $id) {
+    result
+  }
+}

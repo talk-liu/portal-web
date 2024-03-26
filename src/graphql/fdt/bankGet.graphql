@@ -1,0 +1,5 @@
+query getBankGet($type:String) {
+  bankGet(type:$type) {
+    result
+  }
+}

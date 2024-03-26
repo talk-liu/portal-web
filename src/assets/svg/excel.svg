@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.034 16.291 0.034 16.291 16.9999 0 16.9999"></polygon>
+        <polygon id="path-3" points="0 17.9661 16.291 17.9661 16.291 1.0001 0 1.0001"></polygon>
+    </defs>
+    <g id="交易大厅" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="历史委托-copy-2" transform="translate(-1177.000000, -176.000000)">
+            <g id="Page-1" transform="translate(1177.000000, 175.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.966100)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M15.291,14.9999 C15.291,15.5519 14.842,15.9999 14.291,15.9999 L4.694,15.9999 C4.143,15.9999 3.694,15.5519 3.694,14.9999 L3.694,13.8109 L9,13.8109 L9,4.8109 L3.694,4.8109 L3.694,2.0339 C3.694,1.4819 4.143,1.0339 4.694,1.0339 L14.291,1.0339 C14.842,1.0339 15.291,1.4819 15.291,2.0339 L15.291,14.9999 Z M2.07,11.9149 L3.762,9.2879 L2.136,6.6989 L3.653,6.6989 L4.592,8.2719 L5.555,6.6989 L7.009,6.6989 L5.373,9.2349 L7.065,11.9149 L5.544,11.9149 L4.543,10.2509 L3.52,11.9149 L2.07,11.9149 Z M14.291,0.0339 L4.694,0.0339 C3.589,0.0339 2.694,0.9299 2.694,2.0339 L2.694,4.8109 L0,4.8109 L0,13.8109 L2.694,13.8109 L2.694,14.9999 C2.694,16.1039 3.589,16.9999 4.694,16.9999 L14.291,16.9999 C15.395,16.9999 16.291,16.1039 16.291,14.9999 L16.291,2.0339 C16.291,0.9299 15.395,0.0339 14.291,0.0339 Z" id="Fill-1" fill="#9DADBB" mask="url(#mask-2)"></path>
+                </g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <polygon id="Fill-4" fill="#9DADBB" mask="url(#mask-4)" points="10.375 8.9011 14.25 8.9011 14.25 7.6231 10.375 7.6231"></polygon>
+                <polygon id="Fill-6" fill="#9DADBB" mask="url(#mask-4)" points="10.375 11.1721 14.25 11.1721 14.25 9.8951 10.375 9.8951"></polygon>
+                <polygon id="Fill-7" fill="#9DADBB" mask="url(#mask-4)" points="10.375 13.4431 14.25 13.4431 14.25 12.1651 10.375 12.1651"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

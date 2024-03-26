@@ -1,0 +1,5 @@
+mutation delWithdrawAddress($id:Int!) {
+  deleteAddress(id: $id) {
+    result
+  }
+}

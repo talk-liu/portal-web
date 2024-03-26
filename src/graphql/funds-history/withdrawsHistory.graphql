@@ -1,0 +1,6 @@
+query getWithdrawsHistory($page:Int,$page_size:Int) {
+  withdrawsHistory(page: $page, page_size: $page_size)  {
+    withdraws,
+    meta
+  }
+}

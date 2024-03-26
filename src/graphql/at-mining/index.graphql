@@ -1,0 +1,49 @@
+query getAtMiningData {
+  atTotalInfos {
+    interval
+    atPrice
+    atMiningCost
+    totalCP
+    friendCP
+    basicCP
+    ticketCP
+  }
+  lastSevenAtAwards {
+    timestamp
+    platformToBeAward
+    unitAtAward
+    thousandAtAward
+    atAwardPerDay
+    atAwardPerWeek
+  }
+  lastSevenAtMiningAwards {
+    timestamp
+    releaseAt
+    tradeFee
+    unitAtMiningCost
+    miningAwardPercentPerDay
+  }
+  platformProfit {
+    at_profit_rate
+    current_profit
+    distributed
+    members_seven_days_at
+    platform_seven_days_at
+    total_at
+    total_at_delivered
+    total_profit
+    unit_at_profit
+    yesterday_profit
+  }
+  computingPower {
+    count
+    estimated
+    blocks
+  }
+  ticker {
+    markets
+  }
+  icoAndOp {
+    candy
+  }
+}

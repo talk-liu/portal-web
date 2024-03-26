@@ -1,0 +1,5 @@
+mutation twoFrontendFactor($type: String, $refresh: Boolean) {
+  twoFrontendFactor(type: $type, refresh: $refresh) {
+    result
+  }
+}

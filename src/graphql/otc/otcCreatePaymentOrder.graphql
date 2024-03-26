@@ -1,0 +1,5 @@
+mutation createPaymentOrder($quote_id: String) {
+  createPaymentOrder(quote_id: $quote_id) {
+    result
+  }
+}

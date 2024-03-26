@@ -1,0 +1,10 @@
+query getOptionCurrencies {
+  optionCurrencies {
+    id
+    code
+    symbol
+    readable_name
+    key,
+    fixed
+  }
+}

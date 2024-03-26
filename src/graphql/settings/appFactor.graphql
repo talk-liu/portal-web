@@ -1,0 +1,5 @@
+mutation appFactor($auth_action: String, $otp: String, $password: String) {
+  appFactor(auth_action: $auth_action, otp: $otp, password: $password) {
+    result
+  }
+}

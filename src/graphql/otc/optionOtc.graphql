@@ -1,0 +1,9 @@
+query optionOtc {
+  optionOtc {
+    usd_cny
+    usd_rub
+    usd_krw
+    usd_eur
+    usd_gbp
+  }
+}

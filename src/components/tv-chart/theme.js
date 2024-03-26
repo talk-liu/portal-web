@@ -1,0 +1,28 @@
+export default {
+  light: {
+    'scalesProperties.lineColor': '#ffffff',
+    'mainSeriesProperties.lineStyle.color': '#FF9837',
+    'mainSeriesProperties.candleStyle.upColor': '#23AE5E',
+    'mainSeriesProperties.candleStyle.downColor': '#EB3C3C',
+    'mainSeriesProperties.candleStyle.wickUpColor': '#23AE5E',
+    'mainSeriesProperties.candleStyle.wickDownColor': '#EB3C3C',
+    'scalesProperties.textColor': '#333333',
+    'volume.volume.color.0': 'rgba(238, 67, 67, 0.3)',
+    'volume.volume.color.1': 'rgba(59, 180, 110, 0.3)',
+    'paneProperties.background': '#ffffff',
+    'paneProperties.gridProperties.color': '#d8d8d8',
+  },
+  dark: {
+    'scalesProperties.lineColor': '#1a1a1a',
+    'mainSeriesProperties.lineStyle.color': '#FF9837',
+    'mainSeriesProperties.candleStyle.upColor': '#23AE5E',
+    'mainSeriesProperties.candleStyle.downColor': '#EB3C3C',
+    'mainSeriesProperties.candleStyle.wickUpColor': '#23AE5E',
+    'mainSeriesProperties.candleStyle.wickDownColor': '#EB3C3C',
+    'scalesProperties.textColor': 'rgba(255, 255, 255, 0.4)',
+    'volume.volume.color.0': 'rgba(194, 80, 84, 0.3)',
+    'volume.volume.color.1': 'rgba(38, 130, 90, 0.3)',
+    'paneProperties.background': '#1a1a1a',
+    'paneProperties.gridProperties.color': 'rgba(255, 255, 255, 0.2)',
+  },
+}

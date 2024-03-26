@@ -1,0 +1,21 @@
+query submitIeoOrder(
+    $ieoCode: String
+    $memberId: Int
+    $buyAmount: Float
+    $currencyAmount: Float
+    $rewardAmount: Float
+    $rewardRate: Float
+    $currency: Int
+) {
+  submitOrder(
+     ieoCode: $ieoCode
+     memberId: $memberId
+     currencyAmount:$currencyAmount
+     rewardAmount: $rewardAmount
+     buyAmount: $buyAmount
+     rewardRate: $rewardRate
+     currency: $currency
+  ) {
+     data
+  }
+}

@@ -1,0 +1,115 @@
+// 多主题样式
+$themes: (
+  light: (
+    primaryColor: #07e9b2,
+    bgColor: #fafafa,
+    wrapBgColor: #ffffff,
+    lineBorderColorF5: #f5f5f5,
+    lineBorderColorD8: #d8d8d8,
+    orderHoverColor: #f6f6f6,
+    inputBgColor: #ffffff,
+    inputBorderColor: #999999,
+    textColor3: #333333,
+    textColor6: #666666,
+    textColor7: #777777,
+    textColor9: #999999,
+    textColorC: #c1c1c1,
+    textColor32: #333333,
+    zeroColor: #999999,
+    dropBgColor: #ffffff,
+    dropTextHoverColor: #333333,
+    buyColor: #3bb46e,
+    sellColor: #ee4343,
+    disableBuyColor: #cccccc,
+    disableBuyBgColor: #f4f4f4,
+    disableSellColor: #cccccc,
+    disableSellBgColor: #f4f4f4,
+    buyBorderColor: rgba(#ee4343, 0.6),
+    sellBorderColor: rgba(#80ca73, 0.6),
+    buyToolTipColor: #80ca73,
+    sellToolTipColor: #ee4343,
+    toolTipBgColor: rgba(#fff, 0.7),
+    tabColor: #000000,
+    tabActiveColor: #000000,
+    disabledColor: #fafafa,
+    disabledZoomColor: #dedede,
+    orderHover: rgba(#bdc7d1, 0.2),
+    tipsBg: #fffdf4,
+    notificationBg: #ffffff,
+    textError: #ee4343,
+    textSuccess: #3bb46e,
+    textWarn: #ffd200,
+    headerDrop: #ffffff,
+    themedActive: #fbfbfb,
+    themedIconActive: #333333,
+    titleBg: #f7f7f7,
+  ),
+  dark: (
+    primaryColor: #e2a633,
+    bgColor: #000000,
+    wrapBgColor: #1a1a1a,
+    lineBorderColorF5: rgba(#ffffff, 0.05),
+    lineBorderColorD8: rgba(#ffffff, 0.05),
+    orderHoverColor: rgba(#000000, 0.3),
+    inputBgColor: #171718,
+    inputBorderColor: #171718,
+    textColor1: #ffffff,
+    textColor3: rgba(#ffffff, 0.7),
+    textColor6: rgba(#ffffff, 0.45),
+    textColor7: rgba(#ffffff, 0.45),
+    textColor9: rgba(#ffffff, 0.3),
+    textColorC: rgba(#ffffff, 0.7),
+    textColor32: rgba(#ffffff, 0.4),
+    zeroColor: rgba(#d2d3d8, 0.25),
+    dropBgColor: #2a2a2a,
+    dropTextHoverColor: #000000,
+    buyColor: #23ae5e,
+    sellColor: #eb3c3c,
+    disableBuyColor: rgba(#ffffff, 0.3),
+    disableBuyBgColor: #43805d,
+    disableSellColor: rgba(#ffffff, 0.3),
+    disableSellBgColor: #b45757,
+    buyBorderColor: rgba(#000, 0.7),
+    sellBorderColor: rgba(#000, 0.7),
+    buyToolTipColor: #23ae5e,
+    sellToolTipColor: #eb3c3c,
+    toolTipBgColor: rgba(#000, 0.7),
+    tabColor: rgba(#ffffff, 0.7),
+    tabActiveColor: #c67d3a,
+    disabledColor: #171718,
+    disabledZoomColor: #333333,
+    orderHover: rgba(#000000, 0.3),
+    tipsBg: #2a2a2a,
+    notificationBg: #000,
+    textError: #eb3c3c,
+    textSuccess: #23ae5e,
+    textWarn: #ff9837,
+    headerDrop: #333333,
+    themedActive: #2a2a2a,
+    themedIconActive: #999999,
+    titleBg: rgba(#ffffff, 0.08),
+  ),
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

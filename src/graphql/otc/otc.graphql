@@ -1,0 +1,6 @@
+query getOtc {
+  otc {
+    otc_opened
+    usdt_cny_exchange_rate
+  }
+}

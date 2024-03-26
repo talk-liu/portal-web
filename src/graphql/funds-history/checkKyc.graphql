@@ -1,0 +1,5 @@
+query postCheckKyc {
+  checkKyc {
+    result
+  }
+}

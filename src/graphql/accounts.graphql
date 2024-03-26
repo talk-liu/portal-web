@@ -1,0 +1,29 @@
+# query getAccount($market: String!) {
+#   account(market: $market) {
+#     coinInfo
+#   }
+# }
+
+query getAccounts {
+  optionBalance {
+    currency
+    balance
+    locked
+    deposit_address
+    memo
+    default_withdraw_fund_source_id
+    minimum_withdraw_amount
+    withdraw_fee
+    require_memo
+    readable_name
+    withdraw_amount_h24
+    withdraw_amount_max_h24
+    min_confirmations
+    max_confirmations
+    can_deposit
+    can_withdraw
+    vote_currency
+    withdraw_fixed
+    fee
+  }
+}

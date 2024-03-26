@@ -1,0 +1,23 @@
+query getGame(
+  $page: Int
+  $num: Int
+) {
+  atGameTaskList(page: $page, num: $num) {
+  count
+  groupName
+  vipGrade
+  totalPoint
+  groupNameCn
+  content {
+    id
+    memberId
+    groupName
+    taskId
+    taskTitle
+    Point
+    isCompleted
+    taskTitleCn
+    }
+  }
+}
+

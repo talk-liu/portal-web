@@ -1,0 +1,6 @@
+query getDepositHistory($type:String,$page:Int,$page_size:Int) {
+  depositHistory(type: $type, page: $page, page_size: $page_size) {
+    deposits
+    meta
+  }
+}

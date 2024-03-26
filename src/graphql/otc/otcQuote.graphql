@@ -1,0 +1,5 @@
+query getQuote($digital_currency: String, $fiat_currency: String, $requested_currency: String, $requested_amount: Float) {
+  quote(digital_currency: $digital_currency, fiat_currency: $fiat_currency, requested_currency: $requested_currency, requested_amount: $requested_amount) {
+    result
+  }
+}

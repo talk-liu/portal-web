@@ -1,0 +1,14 @@
+query getPlatformProfit {
+  platformProfit {
+    at_profit_rate
+    current_profit
+    distributed
+    members_seven_days_at
+    platform_seven_days_at
+    total_at
+    total_at_delivered
+    total_profit
+    unit_at_profit
+    yesterday_profit
+  }
+}

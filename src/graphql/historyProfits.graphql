@@ -1,0 +1,6 @@
+query getHistoryProfits($page:Int,$page_size:Int) {
+  historyProfits(page: $page, page_size: $page_size)  {
+    deposits,
+    meta
+  }
+}

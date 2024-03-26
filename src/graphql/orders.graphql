@@ -1,0 +1,45 @@
+query getOrders(
+  $from: String
+  $to: String
+  $market: String
+  $bu: String
+  $qu: String
+  $page: Int
+  $page_size: Int
+  $side: String
+  $state: String
+  $no_canceled: String
+  $no_wait: String
+) {
+  order(
+    from: $from
+    to: $to
+    market: $market
+    bu: $bu
+    qu: $qu
+    page: $page
+    page_size: $page_size
+    side: $side
+    state: $state
+    no_canceled: $no_canceled
+    no_wait: $no_wait
+  ) {
+    orders {
+      id
+      side
+      ord_type
+      amount
+      price
+      avg_price
+      state
+      market
+      created_at
+      volume
+      remaining_volume
+      executed_volume
+      trades_count
+      total_fee
+    }
+    meta
+  }
+}

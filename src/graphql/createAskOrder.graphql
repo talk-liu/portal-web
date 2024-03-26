@@ -1,0 +1,5 @@
+mutation createAskOrder($market: String!, $volume: String!, $price: String, $ord_type: String, $percent: String) {
+  ask(market: $market, volume: $volume, price: $price, ord_type: $ord_type, percent: $percent) {
+    id
+  }
+}

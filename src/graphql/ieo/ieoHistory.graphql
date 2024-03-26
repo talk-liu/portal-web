@@ -1,0 +1,33 @@
+query getIeoHistory(
+  $memberId: Int
+  $ieoCode: String
+  $number: Int
+  $size: Int
+){
+  ieoHistoryOrderList(
+    memberId: $memberId
+    ieoCode : $ieoCode
+    number: $number
+    size: $size
+  ){
+    meta{
+      page
+      page_size
+      total_count
+    }
+    ieoOrderList{
+      id
+      ieoCode
+      memberId
+      accountId
+      currency
+      amount
+      buyAmount
+      currencyAmount
+      rewardAmount
+      rewardRate
+      state
+      payUnit
+    }
+  }
+}

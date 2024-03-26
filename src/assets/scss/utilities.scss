@@ -1,0 +1,204 @@
+// 通用工具类
+
+.clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//
+// Utility classes
+// --------------------------------------------------
+// 顶部加载
+// ------------------------
+#nprogress .bar {
+  background: #e98c09;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px #e98c09, 0 0 5px #e98c09;
+}
+
+// Floats
+// -------------------------
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+// center
+.margin-center {
+  margin: 0 auto;
+}
+
+// Font Bold
+// --------------------------
+.fb {
+  font-weight: bold;
+}
+
+.fb-r {
+  font-weight: 300;
+}
+
+// flex
+// --------------------------
+.flex {
+  display: flex;
+}
+.aic {
+  align-items: center !important;
+}
+.jcc {
+  justify-content: center !important;
+}
+.jcsb {
+  justify-content: space-between !important;
+}
+.jcsa {
+  justify-content: space-around !important;
+}
+
+// Font Size
+.f12 {
+  font-size: 12px;
+}
+.f13 {
+  font-size: 13px;
+}
+.f14 {
+  font-size: 14px;
+}
+
+// Font Family
+.th-num-bold {
+  font-family: dinBold, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Helvetica Neue', Helvetica, 'Hiragino Sans GB',
+    Arial, sans-serif;
+}
+.th-en {
+  font-family: euRegular, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Helvetica Neue', Helvetica, 'Hiragino Sans GB',
+    Arial, sans-serif;
+}
+
+// Card hover
+.card-hover:hover {
+  border: 1px solid $color-primary !important;
+  box-shadow: 0 8px 16px rgba(255, 210, 0, 0.19);
+  cursor: pointer;
+}
+
+.dotting {
+  display: inline-block;
+  width: 10px;
+  min-height: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  border-left: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  background-color: currentColor;
+  background-clip: content-box;
+  box-sizing: border-box;
+  animation: dot 3s infinite step-start both;
+}
+.dotting:before {
+  content: '...';
+  content: '';
+}
+
+@keyframes dot {
+  25% {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  50% {
+    border-right-color: transparent;
+    background-color: transparent;
+  }
+  75% {
+    border-right-color: transparent;
+  }
+}
+
+.scrollStyle {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.scrollStyle::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.scrollStyle::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #e3e3e3;
+}
+
+.scrollStyle::-webkit-scrollbar-track {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #ffffff;
+}
+
+.theme-dark {
+  .scrollStyle::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #5a5656;
+  }
+  .scrollStyle::-webkit-scrollbar-track {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #1a1a1a;
+  }
+}
+
+.u-tabs {
+  margin: 0 20px;
+  display: flex;
+}
+.u-tab-button {
+  height: 45px;
+  line-height: 45px;
+  color: $color-6;
+  font-size: 16px;
+  // font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.current {
+    cursor: default;
+    color: $color-0;
+    @include themify($themes) {
+      color: themed('tabColor');
+    }
+  }
+  &.current:after {
+    content: '';
+    // background-color: $color-0;
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -25%;
+    border-radius: 20%;
+    @include themify($themes) {
+      background-color: themed('tabActiveColor');
+    }
+  }
+}
+.u-tabs-m .u-tab-button {
+  font-size: 15px;
+}
+.primary-bg {
+  background-color: #fff;
+}

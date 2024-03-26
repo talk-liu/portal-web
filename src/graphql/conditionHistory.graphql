@@ -1,0 +1,36 @@
+query getConditionHistory(
+  $market_code: String
+  $begin_time: Int
+  $end_time: Int
+  $condition_type: Int
+  $page: Int
+  $page_size: Int
+) {
+  conditionHistory(
+    market_code: $market_code
+    begin_time: $begin_time
+    end_time: $end_time
+    condition_type: $condition_type
+    page: $page
+    page_size: $page_size
+  ) {
+    conditions {
+      id
+      member_id
+      market_id
+      market_code
+      direction
+      trigger_price
+      price
+      volume
+      condition_type
+      ord_type
+      created_time
+      side
+      state
+      done_at
+      reason
+    }
+    meta
+  }
+}

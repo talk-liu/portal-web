@@ -1,0 +1,5 @@
+mutation createBidOrder($market: String!, $volume: String!, $price: String, $ord_type: String, $percent: String) {
+  bid(market: $market, volume: $volume, price: $price, ord_type: $ord_type, percent: $percent) {
+    id
+  }
+}

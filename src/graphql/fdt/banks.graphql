@@ -1,0 +1,5 @@
+query getBanks($swift_code:String,$name:String) {
+  banks(swift_code: $swift_code,name:$name) {
+    result
+  }
+}

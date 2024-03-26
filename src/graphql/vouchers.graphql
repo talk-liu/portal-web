@@ -1,0 +1,6 @@
+query getVouchers {
+  voucher {
+    vouchers
+    market_voucher
+  }
+}

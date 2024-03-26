@@ -1,0 +1,17 @@
+query getHomeData {
+  icoAndOp {
+    ico
+    operationActivity
+  }
+  otc {
+    otc_opened
+    usdt_cny_exchange_rate
+  }
+  optionOtc {
+    usd_cny
+    usd_rub
+    usd_krw
+    usd_eur
+    usd_gbp
+  }
+}

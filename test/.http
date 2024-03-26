@@ -1,0 +1,8 @@
+@api = https://riostox.com/graphql
+
+GET {{api}}?query={kline(markets:"atusdt,atusdt,ateth"){result}}
+authorization: Basic YWJjYzphYWJiY2Nj
+content-type: application/json
+cookie: csrfToken=ZSQ4UZZnZ4U6pEjzttsAFwvh;_session=a1542656b8f4ed812703e0d6e3a7fdde
+x-csrf-token: ZSQ4UZZnZ4U6pEjzttsAFwvh
+# x-csrf-token-portal: ZSQ4UZZnZ4U6pEjzttsAFwvh

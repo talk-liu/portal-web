@@ -1,0 +1,68 @@
+export default {
+  member: {
+    id: 16,
+    sn: 'PEA2R2EQZAOTIO',
+    display_name: null,
+    email: 'jiafan.feng@riostox.com',
+    identity_id: null,
+    created_at: '2018-07-18T07:27:59.814Z',
+    updated_at: '2018-12-29T07:28:22.333Z',
+    state: null,
+    activated: true,
+    country_code: null,
+    disabled: false,
+    api_disabled: false,
+    nickname: null,
+    last_security_action_at: null,
+    withdraw_disabled: false,
+    name: null,
+    app_activated: false,
+    sms_activated: false,
+    email_activated: false,
+    id_document_verified: false,
+    id_document_state: 'unverified',
+    memo: 16,
+    security_settings_changed_within_h24: false,
+    withdraw_amount_h24: 0,
+    member_tags: [''],
+    my_income: {
+      at_ratio: 0,
+      yesterday_profit: {
+        beu: {
+          btc: '0.0',
+          eth: '0.0',
+          usdt: '0.0',
+        },
+      },
+      total_profit: {
+        beu: {
+          btc: '0.0',
+          eth: '0.0',
+          usdt: '0.0',
+        },
+      },
+      last_at_income: {
+        amount: '0.0',
+      },
+      total_at: {
+        amount: '0.0',
+      },
+      frozen_at: {
+        amount: 0,
+        list: [],
+      },
+      seven_days_at: {
+        '2018-12-26': '0',
+        '2018-12-27': '0',
+        '2018-12-28': '0',
+        '2018-12-29': '0',
+        '2018-12-30': '0',
+        '2018-12-31': '0',
+        '2019-01-01': '0',
+      },
+      finished_cache: null,
+    },
+    api_token_tasted: false,
+    force_kyc: false,
+  },
+}

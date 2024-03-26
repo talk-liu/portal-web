@@ -1,0 +1,14 @@
+query getWithdrawAddress {
+  withdrawAddress {
+    id
+    currency
+    fund_extra
+    fund_uid
+    created_at
+    updated_at
+    minimum_withdraw_amount
+    withdraw_fee
+    readable_name
+    require_memo
+  }
+}

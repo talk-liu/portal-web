@@ -1,0 +1,5 @@
+query postFiat($currency:String,$bank_card_id:String,$sum:String,$memo:String,$otp:String,$type:String) {
+  fiat(currency: $currency,bank_card_id:$bank_card_id,sum:$sum,memo:$memo,otp:$otp,type:$type) {
+    result
+  }
+}

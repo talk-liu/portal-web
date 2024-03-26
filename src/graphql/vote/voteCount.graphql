@@ -1,0 +1,5 @@
+query getVoteCountData($period: Int!) {
+  voteCount(period: $period) {
+    voteCountInfo
+  }
+}
